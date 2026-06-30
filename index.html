@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>구윤진 강사 투표 · 2026 엠베스트 0타 강사 선발대회</title>
+<meta name="description" content="2026 엠베스트 0타 강사 선발대회 — 사회/역사 구윤진 강사. 핵심을 파고드는 강의, 한 표로 응원해 주세요.">
+<meta name="theme-color" content="#0A1630">
+
+<!-- 공유(카카오톡·링크) 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="구윤진 강사에게 투표하기 · 2026 엠베스트 0타 강사 선발대회">
+<meta property="og:description" content="핵심을 파고드는 강의, 한 표로 응원해 주세요.">
+<meta property="og:locale" content="ko_KR">
+<!-- TODO: 배포 도메인이 정해지면 og:url / og:image(1200x630) 를 채워주세요 -->
+<!-- <meta property="og:url" content="https://your-domain.pages.dev/"> -->
+<!-- <meta property="og:image" content="https://your-domain.pages.dev/og.jpg"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#10203F; --navy-deep:#0A1630; --ink:#33425E;
+    --mint:#00BEB4; --mint-bright:#00D6C8; --mint-deep:#00A89F; --mint-soft:#7CEFE6;
+    --screen:#F4F8FB; --line:#E1E9F2; --muted:#7A8AA3;
+    --col:480px;            /* 데스크톱 중앙 컬럼 최대 폭 */
+    --cta-h:88px;           /* 하단 고정 CTA 영역 높이(콘텐츠 여백 확보용) */
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    font-family:'IBM Plex Sans KR',sans-serif;
+    color:var(--navy);
+    /* 데스크톱에서 컬럼 양옆으로 보이는 배경 */
+    background:#E8EEF5;
+    background-image:radial-gradient(circle at 18% 8%, #EEF3F9 0%, #E2EAF3 55%, #D7E1EC 100%);
+    min-height:100vh;
+    min-height:100dvh;
+  }
+
+  img{display:block;max-width:100%;}
+  a{ -webkit-tap-highlight-color:transparent; }
+
+  /* ===== 중앙 컬럼(모바일=전체폭, 데스크톱=가운데 정렬) ===== */
+  .page{
+    position:relative;
+    width:100%;
+    max-width:var(--col);
+    margin:0 auto;
+    min-height:100vh;
+    min-height:100dvh;
+    background:var(--screen);
+    overflow:hidden;
+    box-shadow:0 40px 80px -30px rgba(10,20,45,.35);
+  }
+  @media (min-width:520px){
+    .page{ min-height:auto; margin:28px auto; border-radius:28px; }
+  }
+
+  /* 하단 고정 CTA에 가리지 않도록 맨 아래 섹션에 여백 */
+  .pad-bottom{ padding-bottom:calc(var(--cta-h) + env(safe-area-inset-bottom)); }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:480px;
+    height:62vh;
+    max-height:560px;
+    background:linear-gradient(160deg,#143064 0%,#0E1E40 55%,#0A1630 100%);
+    overflow:hidden;
+  }
+  @media (min-width:520px){ .hero{ height:520px; } }
+  .hero__glow{
+    position:absolute;inset:0;
+    background:radial-gradient(circle at 76% 18%, rgba(0,190,180,.45), transparent 52%);
+  }
+  /* 프로필 사진: .hero__photo 의 background-image 만 채우면 됩니다 (placeholder 위로 덮임) */
+  .hero__photo{
+    position:absolute;inset:0;
+    background-size:cover;background-position:center top;
+  }
+  .hero__photo-label{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);
+    color:rgba(255,255,255,.3);font-family:'Space Grotesk',sans-serif;
+    font-size:13px;letter-spacing:3px;font-weight:500;
+  }
+  .hero__scrim{
+    position:absolute;left:0;right:0;bottom:0;height:300px;
+    background:linear-gradient(180deg,transparent,rgba(8,18,40,.82) 58%,#0A1630);
+  }
+  .topbar{
+    position:absolute;top:max(42px,env(safe-area-inset-top));left:26px;right:26px;z-index:3;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#fff;letter-spacing:.5px;}
+  .brand span{color:var(--mint-bright);}
+  .contest-tag{
+    font-size:10px;color:var(--navy-deep);background:var(--mint-bright);
+    border-radius:999px;padding:5px 12px;letter-spacing:.5px;font-weight:600;
+  }
+  .namewrap{position:absolute;left:28px;right:28px;bottom:34px;z-index:3;}
+  .pill{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(0,214,200,.14);border:1px solid rgba(0,214,200,.4);
+    border-radius:999px;padding:5px 12px;margin-bottom:14px;
+  }
+  .pill__dot{width:6px;height:6px;border-radius:50%;background:var(--mint-bright);animation:pulse 2s ease-in-out infinite;}
+  .pill__txt{font-size:11px;color:var(--mint-soft);letter-spacing:.5px;font-weight:500;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+  .name{font-weight:700;font-size:56px;color:#fff;line-height:.98;letter-spacing:-2px;}
+  .name-en{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:16px;color:var(--mint-bright);margin-top:8px;letter-spacing:2px;}
+  .tagline{font-size:15px;color:rgba(255,255,255,.82);margin-top:14px;line-height:1.5;}
+
+  /* ===== 섹션 공통 ===== */
+  .sec{padding:0 26px;}
+  .sec h3{font-weight:700;font-size:20px;letter-spacing:-.4px;margin:0 0 16px;}
+
+  /* ===== VOTE BAND ===== */
+  .voteband{padding:26px 26px 6px;}
+  .btn-vote{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    height:58px;border-radius:16px;background:var(--mint);color:#06231F;
+    text-decoration:none;font-weight:700;font-size:17px;letter-spacing:.2px;
+    box-shadow:0 16px 30px -12px rgba(0,190,180,.65);transition:transform .12s ease,background .12s ease;
+  }
+  .btn-vote:active{transform:scale(.985);}
+  .vote-note{text-align:center;font-size:12px;color:var(--muted);margin-top:11px;}
+
+  /* ===== CONTEST INFO ===== */
+  .info{display:flex;margin:24px 26px 0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+  .info > div{flex:1;padding:16px 6px;text-align:center;}
+  .info > div + div{border-left:1px solid var(--line);}
+  .info b{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:var(--navy);line-height:1.1;display:block;}
+  .info b i{color:var(--mint-deep);font-style:normal;}
+  .info span{font-size:11px;color:var(--muted);margin-top:5px;display:block;}
+
+  /* ===== VIDEO ===== */
+  .video-sec{padding:32px 26px 8px;}
+  .video-sec__head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;}
+  .video-sec__head h3{margin:0;}
+  .video-sec__head span{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:14px;color:var(--mint-deep);}
+  .videos{display:flex;flex-direction:column;gap:18px;}
+  .video-frame{
+    position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:var(--navy-deep);
+    box-shadow:0 14px 30px -16px rgba(10,20,45,.55);cursor:pointer;
+  }
+  .video-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .video-frame__shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,48,.12),rgba(10,22,48,.5));}
+  .play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:56px;height:56px;border-radius:50%;background:#fff;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);
+  }
+  .play::after{content:"";width:0;height:0;border-left:18px solid var(--mint);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;}
+  .video-meta{display:flex;align-items:center;gap:8px;margin-top:10px;}
+  .ep{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.5px;color:#fff;background:var(--mint);border-radius:6px;padding:3px 8px;font-weight:600;}
+  .video-meta span:last-child{font-size:14px;color:var(--navy);font-weight:600;line-height:1.4;}
+
+  /* ===== CAREER ===== */
+  .career{padding:30px 26px 8px;}
+  .career .row{display:flex;gap:14px;padding:13px 0;border-top:1px solid var(--line);}
+  .career .row:last-child{border-bottom:1px solid var(--line);}
+  .career .yr{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--mint-deep);font-size:14px;min-width:46px;}
+  .career .desc{font-size:14px;color:var(--ink);line-height:1.5;}
+
+  /* ===== SNS ===== */
+  .sns{padding:30px 26px 8px;}
+  .sns a{
+    display:flex;align-items:center;justify-content:space-between;text-decoration:none;
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-bottom:10px;
+  }
+  .sns a span:first-child{font-size:14px;color:var(--navy);font-weight:600;}
+  .sns a span:last-child{font-size:13px;color:var(--mint-deep);}
+
+  /* ===== 하단 고정 CTA ===== */
+  .sticky-cta{
+    position:fixed;left:50%;transform:translateX(-50%);bottom:0;
+    width:100%;max-width:var(--col);z-index:30;
+    padding:16px 20px calc(24px + env(safe-area-inset-bottom));
+    background:linear-gradient(180deg,rgba(244,248,251,0),var(--screen) 34%);
+  }
+  .sticky-cta .btn-vote{height:56px;font-size:18px;box-shadow:0 16px 30px -10px rgba(0,190,180,.65);}
+</style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+      <!-- 프로필 사진을 넣으려면 아래 div 의 style 에 background-image 만 지정하세요.
+           예) <div class="hero__photo" style="background-image:url('profile.jpg')"></div> -->
+      <div class="hero__photo"></div>
+      <div class="hero__glow"></div>
+      <div class="hero__photo-label">PROFILE PHOTO</div>
+
+      <div class="topbar">
+        <span class="brand">M<span>best</span></span>
+        <span class="contest-tag">2026 0타 강사 선발대회</span>
+      </div>
+
+      <div class="hero__scrim"></div>
+
+      <div class="namewrap">
+        <span class="pill">
+          <span class="pill__dot"></span>
+          <span class="pill__txt">사회/역사 · 재도전 후보</span>
+        </span>
+        <h1 class="name">구윤진</h1>
+        <div class="name-en">GU YUN JIN</div>
+        <p class="tagline">핵심을 파고드는 강의, 한 표로 응원해 주세요</p>
+      </div>
+    </header>
+
+    <!-- ===== VOTE BAND ===== -->
+    <section class="voteband">
+      <a class="vote-link btn-vote" href="#">구윤진 강사에게 투표하기 →</a>
+      <div class="vote-note">엠베스트 회원이면 하루 최대 3표 · 30초면 끝나요</div>
+    </section>
+
+    <!-- ===== CONTEST INFO ===== -->
+    <section class="info">
+      <div><b>6.30<i>–</i>7.14</b><span>투표 기간</span></div>
+      <div><b>1일 3표</b><span>회원 기준</span></div>
+      <div><b>제2회</b><span>엠베스트 대회</span></div>
+    </section>
+
+    <!-- ===== VIDEO ===== -->
+    <section class="video-sec">
+      <div class="video-sec__head">
+        <h3>강의 영상</h3>
+        <span>YouTube</span>
+      </div>
+      <div class="videos">
+        <div>
+          <div class="video-frame" data-yt="RFSKrmF9FbY" data-start="2" data-title="강의 영상 EP.01">
+            <img src="https://i.ytimg.com/vi/RFSKrmF9FbY/hqdefault.jpg" alt="EP.01 썸네일" loading="lazy">
+            <div class="video-frame__shade"></div>
+            <div class="play"></div>
+          </div>
+          <div class="video-meta"><span class="ep">EP.01</span><span>PR 영상 · 사회/역사</span></div>
+        </div>
+        <div>
+          <div class="video-frame" data-yt="vNDMPPEaBzU" data-start="1" data-title="강의 영상 EP.02">
+            <img src="https://i.ytimg.com/vi/vNDMPPEaBzU/hqdefault.jpg" alt="EP.02 썸네일" loading="lazy">
+            <div class="video-frame__shade"></div>
+            <div class="play"></div>
+          </div>
+          <div class="video-meta"><span class="ep">EP.02</span><span>강의 영상 · 사회/역사</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAREER ===== -->
+    <section class="career">
+      <h3>경력 &amp; 성과</h3>
+      <div class="row"><span class="yr">2019</span><span class="desc">엠베스트 강사 — 소개 입력 예정</span></div>
+      <div class="row"><span class="yr">2023</span><span class="desc">주요 강의 / 수상 — 내용 입력 예정</span></div>
+      <div class="row"><span class="yr">now</span><span class="desc">대표 커리큘럼 — 내용 입력 예정</span></div>
+    </section>
+
+    <!-- ===== SNS ===== -->
+    <section class="sns pad-bottom">
+      <h3>더 만나보기</h3>
+      <!-- href 를 실제 링크로 교체하세요 -->
+      <a href="#"><span>Instagram</span><span>@ — &nbsp;→</span></a>
+      <a href="#"><span>YouTube</span><span>채널 →</span></a>
+      <a href="#"><span>엠베스트 강의실</span><span>바로가기 →</span></a>
+    </section>
+
+    <!-- ===== 하단 고정 CTA ===== -->
+    <div class="sticky-cta">
+      <a class="vote-link btn-vote" href="#">투표하러 가기 →</a>
+    </div>
+
+  </main>
+
+<script>
+  // ===== 실제 투표 페이지 URL 로 교체하세요 =====
+  var VOTE_URL = "https://example.com/vote";
+
+  document.querySelectorAll(".vote-link").forEach(function (a) {
+    a.href = VOTE_URL;
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  // 영상 썸네일 클릭 → 유튜브 재생
+  document.querySelectorAll(".video-frame").forEach(function (frame) {
+    frame.addEventListener("click", function () {
+      if (frame.dataset.played) return;
+      frame.dataset.played = "1";
+      var id = frame.dataset.yt;
+      var start = frame.dataset.start || 0;
+      var iframe = document.createElement("iframe");
+      iframe.src =
+        "https://www.youtube-nocookie.com/embed/" + id +
+        "?start=" + start + "&rel=0&autoplay=1";
+      iframe.title = frame.dataset.title || "강의 영상";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      frame.innerHTML = "";
+      frame.style.cursor = "default";
+      frame.appendChild(iframe);
+    });
+  });
+</script>
+</body>
+</html>

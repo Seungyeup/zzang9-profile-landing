@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; }
+  @keyframes pulseRingT { 0% { box-shadow: 0 0 0 0 rgba(0,190,180,.5); } 70% { box-shadow: 0 0 0 16px rgba(0,190,180,0); } 100% { box-shadow: 0 0 0 0 rgba(0,190,180,0); } }
+  .scrollscreen::-webkit-scrollbar { width: 0; display: none; }
+  .scrollscreen { scrollbar-width: none; -ms-overflow-style: none; }
+</style>
+</helmet>
+<div style="min-height:100vh;background:#E8EEF5;background-image:radial-gradient(circle at 18% 8%, #EEF3F9 0%, #E2EAF3 55%, #D7E1EC 100%);font-family:'IBM Plex Sans KR',sans-serif;padding:48px 24px 80px;">
+
+  <div style="max-width:1040px;margin:0 auto 40px;display:flex;flex-direction:column;gap:6px;">
+    <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#00A89F;letter-spacing:1.5px;text-transform:uppercase;">vote landing</div>
+    <h1 style="font-weight:700;font-size:30px;color:#10203F;margin:0;letter-spacing:-.8px;">투표 랜딩페이지</h1>
+    <p style="margin:4px 0 0;color:#566681;font-size:14px;line-height:1.6;max-width:580px;">2026 엠베스트 0타 강사 선발대회용 모바일 페이지입니다. 엠베스트 브랜드 색감(네이비 · 민트)을 반영했어요. 프로필 사진·영상 제목·투표 링크는 실제 내용으로 채워드릴게요.</p>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:56px;justify-content:center;align-items:flex-start;">
+
+    <div id="1a" style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+
+      <div style="width:392px;padding:11px;background:linear-gradient(160deg,#0c1730,#16284d);border-radius:56px;box-shadow:0 40px 80px -30px rgba(10,20,45,.55),0 6px 16px rgba(0,0,0,.18),inset 0 1px 2px rgba(255,255,255,.12);">
+        <div style="position:relative;width:370px;height:812px;border-radius:46px;overflow:hidden;background:#F4F8FB;">
+          <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:118px;height:26px;background:#0c1730;border-radius:0 0 16px 16px;z-index:40;"></div>
+
+          <div class="scrollscreen" style="position:absolute;inset:0;overflow-y:auto;">
+
+            <!-- FULL-BLEED HERO -->
+            <div style="position:relative;height:520px;background:linear-gradient(160deg,#143064 0%,#0E1E40 55%,#0A1630 100%);overflow:hidden;">
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 76% 18%, rgba(0,190,180,.45), transparent 52%);"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);color:rgba(255,255,255,.3);font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:3px;font-weight:500;">PROFILE PHOTO</div>
+
+              <!-- top bar -->
+              <div style="position:absolute;top:42px;left:26px;right:26px;display:flex;align-items:center;justify-content:space-between;z-index:3;">
+                <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#fff;letter-spacing:.5px;">M<span style="color:#00D6C8;">best</span></span>
+                <span style="font-size:10px;color:#0A1630;background:#00D6C8;border-radius:999px;padding:5px 12px;letter-spacing:.5px;font-weight:600;">2026 0타 강사 선발대회</span>
+              </div>
+
+              <!-- scrim -->
+              <div style="position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(180deg,transparent,rgba(8,18,40,.82) 58%,#0A1630);"></div>
+
+              <!-- name block -->
+              <div style="position:absolute;left:28px;right:28px;bottom:34px;z-index:3;">
+                <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(0,214,200,.14);border:1px solid rgba(0,214,200,.4);border-radius:999px;padding:5px 12px;margin-bottom:14px;">
+                  <span style="width:6px;height:6px;border-radius:50%;background:#00D6C8;"></span>
+                  <span style="font-size:11px;color:#7CEFE6;letter-spacing:.5px;font-weight:500;">사회/역사 · 재도전 후보</span>
+                </div>
+                <h2 style="font-weight:700;font-size:56px;color:#fff;margin:0;line-height:.98;letter-spacing:-2px;">구윤진</h2>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:16px;color:#00D6C8;margin-top:8px;letter-spacing:2px;">GU YUN JIN</div>
+                <p style="font-size:15px;color:rgba(255,255,255,.82);margin:14px 0 0;line-height:1.5;">핵심을 파고드는 강의, 한 표로 응원해 주세요</p>
+              </div>
+            </div>
+
+            <!-- VOTE BAND -->
+            <div style="padding:26px 26px 6px;">
+              <a href="#" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;height:58px;border-radius:16px;background:#00BEB4;color:#06231F;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:.2px;box-shadow:0 16px 30px -12px rgba(0,190,180,.65);">구윤진 강사에게 투표하기 →</a>
+              <div style="text-align:center;font-size:12px;color:#7A8AA3;margin-top:11px;">엠베스트 회원이면 하루 최대 3표 · 30초면 끝나요</div>
+            </div>
+
+            <!-- CONTEST INFO strip -->
+            <div style="display:flex;gap:0;margin:24px 26px 0;background:#fff;border:1px solid #E1E9F2;border-radius:16px;overflow:hidden;">
+              <div style="flex:1;padding:16px 6px;text-align:center;border-right:1px solid #E1E9F2;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#10203F;line-height:1.1;">6.30<span style="color:#00A89F;">–</span>7.14</div><div style="font-size:11px;color:#7A8AA3;margin-top:5px;">투표 기간</div></div>
+              <div style="flex:1;padding:16px 6px;text-align:center;border-right:1px solid #E1E9F2;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#10203F;line-height:1.1;">1일 3표</div><div style="font-size:11px;color:#7A8AA3;margin-top:5px;">회원 기준</div></div>
+              <div style="flex:1;padding:16px 6px;text-align:center;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#10203F;line-height:1.1;">제2회</div><div style="font-size:11px;color:#7A8AA3;margin-top:5px;">엠베스트 대회</div></div>
+            </div>
+
+            <!-- VIDEO -->
+            <div style="padding:32px 26px 8px;">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;">
+                <h3 style="font-weight:700;font-size:20px;color:#10203F;margin:0;letter-spacing:-.4px;">강의 영상</h3>
+                <span style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:14px;color:#00A89F;">YouTube</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:18px;">
+
+                <div>
+                  <div style="position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#0A1630;box-shadow:0 14px 30px -16px rgba(10,20,45,.55);">
+                    <sc-if value="{{ play1 }}" hint-placeholder-val="{{ false }}">
+                      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;" src="https://www.youtube-nocookie.com/embed/RFSKrmF9FbY?start=2&rel=0&autoplay=1" title="강의 영상 EP.01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </sc-if>
+                    <sc-if value="{{ notPlay1 }}" hint-placeholder-val="{{ true }}">
+                      <div onClick="{{ start1 }}" style="position:absolute;inset:0;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+                        <img src="https://i.ytimg.com/vi/RFSKrmF9FbY/hqdefault.jpg" alt="EP.01 썸네일" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+                        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,48,.12),rgba(10,22,48,.5));"></div>
+                        <div style="position:relative;width:56px;height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);">
+                          <div style="width:0;height:0;border-left:18px solid #00BEB4;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;"></div>
+                        </div>
+                      </div>
+                    </sc-if>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;margin-top:10px;">
+                    <span style="font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.5px;color:#fff;background:#00BEB4;border-radius:6px;padding:3px 8px;font-weight:600;">EP.01</span>
+                    <span style="font-size:14px;color:#10203F;font-weight:600;line-height:1.4;">PR 영상 · 사회/역사</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#0A1630;box-shadow:0 14px 30px -16px rgba(10,20,45,.55);">
+                    <sc-if value="{{ play2 }}" hint-placeholder-val="{{ false }}">
+                      <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;" src="https://www.youtube-nocookie.com/embed/vNDMPPEaBzU?start=1&rel=0&autoplay=1" title="강의 영상 EP.02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </sc-if>
+                    <sc-if value="{{ notPlay2 }}" hint-placeholder-val="{{ true }}">
+                      <div onClick="{{ start2 }}" style="position:absolute;inset:0;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+                        <img src="https://i.ytimg.com/vi/vNDMPPEaBzU/hqdefault.jpg" alt="EP.02 썸네일" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+                        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,48,.12),rgba(10,22,48,.5));"></div>
+                        <div style="position:relative;width:56px;height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);">
+                          <div style="width:0;height:0;border-left:18px solid #00BEB4;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;"></div>
+                        </div>
+                      </div>
+                    </sc-if>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;margin-top:10px;">
+                    <span style="font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.5px;color:#fff;background:#00BEB4;border-radius:6px;padding:3px 8px;font-weight:600;">EP.02</span>
+                    <span style="font-size:14px;color:#10203F;font-weight:600;line-height:1.4;">강의 영상 · 사회/역사</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- CAREER -->
+            <div style="padding:30px 26px 8px;">
+              <h3 style="font-weight:700;font-size:20px;color:#10203F;margin:0 0 16px;letter-spacing:-.4px;">경력 &amp; 성과</h3>
+              <div style="display:flex;flex-direction:column;">
+                <div style="display:flex;gap:14px;padding:13px 0;border-top:1px solid #E1E9F2;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;color:#00A89F;font-size:14px;min-width:46px;">2019</span><span style="font-size:14px;color:#33425E;line-height:1.5;">엠베스트 강사 — 소개 입력 예정</span></div>
+                <div style="display:flex;gap:14px;padding:13px 0;border-top:1px solid #E1E9F2;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;color:#00A89F;font-size:14px;min-width:46px;">2023</span><span style="font-size:14px;color:#33425E;line-height:1.5;">주요 강의 / 수상 — 내용 입력 예정</span></div>
+                <div style="display:flex;gap:14px;padding:13px 0;border-top:1px solid #E1E9F2;border-bottom:1px solid #E1E9F2;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;color:#00A89F;font-size:14px;min-width:46px;">now</span><span style="font-size:14px;color:#33425E;line-height:1.5;">대표 커리큘럼 — 내용 입력 예정</span></div>
+              </div>
+            </div>
+
+            <!-- SNS -->
+            <div style="padding:30px 26px 132px;">
+              <h3 style="font-weight:700;font-size:20px;color:#10203F;margin:0 0 14px;letter-spacing:-.4px;">더 만나보기</h3>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <a href="#" style="display:flex;align-items:center;justify-content:space-between;text-decoration:none;background:#fff;border:1px solid #E1E9F2;border-radius:14px;padding:15px 18px;"><span style="font-size:14px;color:#10203F;font-weight:600;">Instagram</span><span style="font-size:13px;color:#00A89F;">@ —  →</span></a>
+                <a href="#" style="display:flex;align-items:center;justify-content:space-between;text-decoration:none;background:#fff;border:1px solid #E1E9F2;border-radius:14px;padding:15px 18px;"><span style="font-size:14px;color:#10203F;font-weight:600;">YouTube</span><span style="font-size:13px;color:#00A89F;">채널 →</span></a>
+                <a href="#" style="display:flex;align-items:center;justify-content:space-between;text-decoration:none;background:#fff;border:1px solid #E1E9F2;border-radius:14px;padding:15px 18px;"><span style="font-size:14px;color:#10203F;font-weight:600;">엠베스트 강의실</span><span style="font-size:13px;color:#00A89F;">바로가기 →</span></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- sticky CTA -->
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:16px 20px 24px;background:linear-gradient(180deg,rgba(244,248,251,0),#F4F8FB 34%);z-index:30;">
+            <a href="#" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;height:56px;border-radius:16px;background:#00BEB4;color:#06231F;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:.2px;box-shadow:0 16px 30px -10px rgba(0,190,180,.65);">투표하러 가기 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { play1: false, play2: false };
+  renderVals() {
+    return {
+      play1: this.state.play1,
+      notPlay1: !this.state.play1,
+      play2: this.state.play2,
+      notPlay2: !this.state.play2,
+      start1: () => this.setState({ play1: true }),
+      start2: () => this.setState({ play2: true }),
+    };
+  }
+}
+</script>
+</body>
+</html>

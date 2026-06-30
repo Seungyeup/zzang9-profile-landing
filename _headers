@@ -1,0 +1,8 @@
+# Cloudflare Pages 응답 헤더
+# HTML 은 항상 최신으로, 정적 에셋은 길게 캐시
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

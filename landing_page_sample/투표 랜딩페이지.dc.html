@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#D8D1C5;font-family:"Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+  .scr::-webkit-scrollbar{width:0;display:none}
+  .scr{scrollbar-width:none}
+  @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;width:100%;display:flex;flex-direction:column;align-items:center;padding:48px 24px 80px;gap:40px">
+
+  <div style="text-align:center;max-width:680px">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.5em;text-transform:uppercase;color:#6f6557">Turn 01 · 톤 비교</div>
+    <p style="margin-top:10px;font-size:13px;line-height:1.7;color:#7c7264">따뜻하고 세련된 크림·뉴트럴 방향의 모바일 투표 랜딩페이지입니다. 사진·영상 칸은 드래그로 직접 채울 수 있어요. 채팅에서 <b>1a</b> / <b>1b</b> 로 시안을 지칭해 주세요.</p>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:56px;justify-content:center;align-items:flex-start">
+
+    <!-- ============ OPTION 1A · 크림 에디토리얼 ============ -->
+    <div id="1a" style="display:flex;flex-direction:column;align-items:center;gap:18px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#2A241D;background:#fff;border:1px solid rgba(42,36,29,.15);border-radius:999px;width:46px;height:46px;display:flex;align-items:center;justify-content:center">1a</span>
+        <div style="text-align:left">
+          <div style="font-family:'Gowun Batang',serif;font-size:16px;color:#2A241D">크림 에디토리얼</div>
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a7e6e">Light · Airy · Magazine</div>
+        </div>
+      </div>
+
+      <!-- phone -->
+      <div style="width:390px;padding:11px;background:linear-gradient(160deg,#2b2723,#0e0d0c);border-radius:54px;box-shadow:0 40px 80px -30px rgba(40,33,25,.6),0 0 0 1px rgba(255,255,255,.04) inset">
+        <div class="scr" style="position:relative;height:824px;border-radius:43px;overflow-y:auto;overflow-x:hidden;background:#F3EDE2;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:30px;background:#0d0c0b;border-radius:16px;z-index:9"></div>
+
+          <!-- status bar -->
+          <div style="position:sticky;top:0;z-index:8;height:50px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:#F3EDE2;color:#2A241D;font-size:14px;font-weight:600">
+            <span>9:41</span>
+            <span style="font-size:11px;letter-spacing:.05em">●●● 5G ▮▮</span>
+          </div>
+
+          <!-- contest banner -->
+          <div style="text-align:center;padding:6px 0 18px">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:#B25B36">2026 Online Class Awards</div>
+            <div style="margin-top:5px;font-size:11px;letter-spacing:.06em;color:#8a7e6e">올해의 강사 부문 · 투표 D-5</div>
+          </div>
+
+          <!-- hero portrait -->
+          <div style="padding:0 22px">
+            <div style="position:relative;border-radius:26px;overflow:hidden">
+              <image-slot id="ji-a-hero" shape="rect" placeholder="프로필 사진" style="display:block;width:100%;height:392px"></image-slot>
+              <div style="position:absolute;left:16px;top:16px;background:rgba(243,237,226,.92);backdrop-filter:blur(4px);border-radius:999px;padding:6px 14px;font-size:11px;letter-spacing:.14em;color:#2A241D">후보 04</div>
+            </div>
+          </div>
+
+          <!-- name block -->
+          <div style="padding:26px 26px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:#a0937f">Ji Yunseo</div>
+            <h1 style="font-family:'Gowun Batang',serif;font-weight:700;font-size:40px;line-height:1.05;color:#2A241D;margin-top:6px">지윤서</h1>
+            <div style="margin-top:12px;font-size:13px;letter-spacing:.02em;color:#7c7264">글쓰기 · 에세이 클래스</div>
+            <p style="font-family:'Gowun Batang',serif;font-style:italic;font-size:21px;line-height:1.5;color:#473d31;margin-top:20px;text-wrap:pretty">“오늘의 당신을,<br>한 문장으로 남기는 법.”</p>
+          </div>
+
+          <!-- primary CTA -->
+          <div style="padding:26px 26px 0">
+            <button onClick="{{ vote }}" style="width:100%;border:none;cursor:pointer;background:#B25B36;color:#FBF4E8;border-radius:16px;padding:18px;font-family:'Noto Sans KR';font-size:16px;font-weight:500;letter-spacing:.02em;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 16px 30px -14px rgba(178,91,54,.7)" style-hover="background:#9c4d2c">
+              지윤서에게 투표하기
+              <span style="font-family:'Cormorant Garamond',serif;font-size:20px">→</span>
+            </button>
+            <div style="text-align:center;margin-top:11px;font-size:11px;color:#9b8f7e">1인 1회 · 외부 투표 페이지로 이동합니다</div>
+          </div>
+
+          <!-- stats -->
+          <div style="margin:30px 22px 0;display:flex;border-top:1px solid rgba(42,36,29,.13);border-bottom:1px solid rgba(42,36,29,.13)">
+            <div style="flex:1;text-align:center;padding:18px 6px">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#2A241D">8,400</div>
+              <div style="font-size:10px;letter-spacing:.1em;color:#8a7e6e;margin-top:2px">누적 수강생</div>
+            </div>
+            <div style="width:1px;background:rgba(42,36,29,.13)"></div>
+            <div style="flex:1;text-align:center;padding:18px 6px">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#2A241D">4.9</div>
+              <div style="font-size:10px;letter-spacing:.1em;color:#8a7e6e;margin-top:2px">평균 평점</div>
+            </div>
+            <div style="width:1px;background:rgba(42,36,29,.13)"></div>
+            <div style="flex:1;text-align:center;padding:18px 6px">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#2A241D">3.2<span style="font-size:16px">만</span></div>
+              <div style="font-size:10px;letter-spacing:.1em;color:#8a7e6e;margin-top:2px">브런치 구독</div>
+            </div>
+          </div>
+
+          <!-- video preview -->
+          <div style="padding:34px 26px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:#B25B36">Class Preview</div>
+            <div style="font-family:'Gowun Batang',serif;font-size:20px;color:#2A241D;margin-top:8px">3분으로 보는 수업의 결</div>
+            <div style="position:relative;margin-top:16px;border-radius:20px;overflow:hidden">
+              <image-slot id="ji-a-video" shape="rect" placeholder="강의 미리보기 영상 썸네일" style="display:block;width:100%;height:200px"></image-slot>
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
+                <div style="width:62px;height:62px;border-radius:50%;background:rgba(243,237,226,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2)">
+                  <div style="width:0;height:0;border-left:18px solid #B25B36;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- career -->
+          <div style="padding:38px 26px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:#B25B36">Career</div>
+            <div style="margin-top:18px;display:flex;flex-direction:column;gap:0">
+              <div style="display:flex;gap:18px;padding:15px 0;border-bottom:1px solid rgba(42,36,29,.1)">
+                <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#B25B36;min-width:42px">12y</span>
+                <div><div style="font-size:14px;color:#2A241D">광고대행사 카피라이터 출신</div><div style="font-size:12px;color:#8a7e6e;margin-top:2px">브랜드 슬로건·캠페인 카피 기획</div></div>
+              </div>
+              <div style="display:flex;gap:18px;padding:15px 0;border-bottom:1px solid rgba(42,36,29,.1)">
+                <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#B25B36;min-width:42px">’23</span>
+                <div><div style="font-size:14px;color:#2A241D">에세이집 «문장의 온도» 출간</div><div style="font-size:12px;color:#8a7e6e;margin-top:2px">교보문고 에세이 베스트 12주</div></div>
+              </div>
+              <div style="display:flex;gap:18px;padding:15px 0">
+                <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#B25B36;min-width:42px">Now</span>
+                <div><div style="font-size:14px;color:#2A241D">온라인 글쓰기 클래스 운영</div><div style="font-size:12px;color:#8a7e6e;margin-top:2px">누적 수강생 8,400명 · 재수강률 41%</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reviews -->
+          <div style="padding:38px 22px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:#B25B36;padding:0 4px">Voices</div>
+            <div style="margin-top:16px;display:flex;flex-direction:column;gap:14px">
+              <div style="background:#FBF7EF;border:1px solid rgba(42,36,29,.08);border-radius:18px;padding:20px">
+                <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:#B25B36;letter-spacing:.1em">★★★★★</div>
+                <p style="font-family:'Gowun Batang',serif;font-size:15px;line-height:1.7;color:#3a3228;margin-top:8px;text-wrap:pretty">“쓰는 게 무섭던 제가, 매주 한 편씩 글을 남기게 됐어요. 첨삭 한 줄 한 줄이 따뜻했습니다.”</p>
+                <div style="font-size:12px;color:#9b8f7e;margin-top:10px">— 수강생 한OO</div>
+              </div>
+              <div style="background:#FBF7EF;border:1px solid rgba(42,36,29,.08);border-radius:18px;padding:20px">
+                <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:#B25B36;letter-spacing:.1em">★★★★★</div>
+                <p style="font-family:'Gowun Batang',serif;font-size:15px;line-height:1.7;color:#3a3228;margin-top:8px;text-wrap:pretty">“막연했던 ‘내 문장’이 생겼어요. 강의가 끝나고도 계속 쓰고 있습니다.”</p>
+                <div style="font-size:12px;color:#9b8f7e;margin-top:10px">— 수강생 윤OO</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- links -->
+          <div style="padding:36px 26px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:#B25B36">Connect</div>
+            <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+              <a href="#" style="text-decoration:none;border:1px solid rgba(42,36,29,.16);border-radius:13px;padding:14px;font-size:13px;color:#2A241D;text-align:center">Instagram</a>
+              <a href="#" style="text-decoration:none;border:1px solid rgba(42,36,29,.16);border-radius:13px;padding:14px;font-size:13px;color:#2A241D;text-align:center">Brunch</a>
+              <a href="#" style="text-decoration:none;border:1px solid rgba(42,36,29,.16);border-radius:13px;padding:14px;font-size:13px;color:#2A241D;text-align:center">YouTube</a>
+              <a href="#" style="text-decoration:none;border:1px solid rgba(42,36,29,.16);border-radius:13px;padding:14px;font-size:13px;color:#2A241D;text-align:center">강의 문의</a>
+            </div>
+          </div>
+
+          <!-- footer CTA -->
+          <div style="margin-top:40px;padding:34px 26px 40px;background:#2A241D;text-align:center">
+            <p style="font-family:'Gowun Batang',serif;font-style:italic;font-size:19px;color:#F3EDE2;line-height:1.5">한 표가,<br>다음 학기의 용기가 됩니다.</p>
+            <button onClick="{{ vote }}" style="margin-top:22px;width:100%;border:none;cursor:pointer;background:#E2A06B;color:#2A241D;border-radius:16px;padding:18px;font-family:'Noto Sans KR';font-size:16px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:8px" style-hover="background:#eaad7d">
+              지윤서에게 투표하기 <span style="font-family:'Cormorant Garamond',serif;font-size:20px">→</span>
+            </button>
+            <div style="margin-top:18px;font-size:10px;letter-spacing:.1em;color:#7c7264">© 2026 Online Class Awards</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- OPT-1B -->
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      vote: () => {
+        // 실제 외부 투표 페이지 URL로 교체하세요
+        window.open("https://example.com/vote", "_blank", "noopener");
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
