@@ -83,11 +83,6 @@
     position:absolute;inset:0;
     background-size:cover;background-position:center top;
   }
-  .hero__photo-label{
-    position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);
-    color:rgba(255,255,255,.3);font-family:'Space Grotesk',sans-serif;
-    font-size:13px;letter-spacing:3px;font-weight:500;
-  }
   .hero__scrim{
     position:absolute;left:0;right:0;bottom:0;height:300px;
     background:linear-gradient(180deg,transparent,rgba(8,18,40,.82) 58%,#0A1630);
@@ -193,11 +188,9 @@
 
     <!-- ===== HERO ===== -->
     <header class="hero">
-      <!-- 프로필 사진을 넣으려면 아래 div 의 style 에 background-image 만 지정하세요.
-           예) <div class="hero__photo" style="background-image:url('profile.jpg')"></div> -->
-      <div class="hero__photo"></div>
+      <!-- 프로필 사진: 교체하려면 background-image 의 파일명만 바꾸세요. -->
+      <div class="hero__photo" style="background-image:url('profile_image.png')"></div>
       <div class="hero__glow"></div>
-      <div class="hero__photo-label">PROFILE PHOTO</div>
 
       <div class="topbar">
         <span class="brand">M<span>best</span></span>
