@@ -26,7 +26,7 @@
     --mint:#00BEB4; --mint-bright:#00D6C8; --mint-deep:#00A89F; --mint-soft:#7CEFE6;
     --screen:#F4F8FB; --line:#E1E9F2; --muted:#7A8AA3;
     --col:480px;            /* 데스크톱 중앙 컬럼 최대 폭 */
-    --cta-h:88px;           /* 하단 고정 CTA 영역 높이(콘텐츠 여백 확보용) */
+    --cta-h:104px;          /* 하단 고정 CTA 영역 높이(콘텐츠 여백 확보용) */
   }
 
   *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
@@ -97,7 +97,7 @@
     font-size:10px;color:var(--navy-deep);background:var(--mint-bright);
     border-radius:999px;padding:5px 12px;letter-spacing:.5px;font-weight:600;
   }
-  .namewrap{position:absolute;left:28px;right:28px;bottom:34px;z-index:3;}
+  .namewrap{position:absolute;left:28px;right:28px;bottom:20px;z-index:3;}
   .pill{
     display:inline-flex;align-items:center;gap:7px;
     background:rgba(0,214,200,.14);border:1px solid rgba(0,214,200,.4);
@@ -106,9 +106,11 @@
   .pill__dot{width:6px;height:6px;border-radius:50%;background:var(--mint-bright);animation:pulse 2s ease-in-out infinite;}
   .pill__txt{font-size:11px;color:var(--mint-soft);letter-spacing:.5px;font-weight:500;}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-  .name{font-weight:700;font-size:56px;color:#fff;line-height:.98;letter-spacing:-2px;}
-  .name-en{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:16px;color:var(--mint-bright);margin-top:8px;letter-spacing:2px;}
-  .tagline{font-size:15px;color:rgba(255,255,255,.82);margin-top:14px;line-height:1.5;}
+  .name{font-weight:700;font-size:56px;color:#fff;line-height:.98;letter-spacing:-2px;margin-left:-2px;}
+  .name-en{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:16px;color:var(--mint-bright);margin-top:10px;letter-spacing:2px;margin-left:5px;}
+  .tagline{font-size:15px;color:rgba(255,255,255,.82);margin-top:14px;line-height:1.6;}
+  .tagline .num{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--mint-bright);font-size:18px;}
+  .tagline .key{color:#fff;font-weight:700;background:linear-gradient(transparent 62%,rgba(0,214,200,.32) 0);padding:0 1px;}
 
   /* ===== 섹션 공통 ===== */
   .sec{padding:0 26px;}
@@ -134,7 +136,7 @@
   .info span{font-size:11px;color:var(--muted);margin-top:5px;display:block;}
 
   /* ===== VIDEO ===== */
-  .video-sec{padding:32px 26px 8px;}
+  .video-sec{padding:20px 26px 8px;}
   .video-sec__head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;}
   .video-sec__head h3{margin:0;}
   .video-sec__head span{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:14px;color:var(--mint-deep);}
@@ -158,13 +160,13 @@
 
   /* ===== CAREER ===== */
   .career{padding:30px 26px 8px;}
-  .career .row{display:flex;gap:14px;padding:13px 0;border-top:1px solid var(--line);}
+  .career .row{display:flex;gap:14px;padding:9px 0;border-top:1px solid var(--line);}
   .career .row:last-child{border-bottom:1px solid var(--line);}
   .career .yr{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--mint-deep);font-size:14px;min-width:46px;}
-  .career .desc{font-size:14px;color:var(--ink);line-height:1.5;}
+  .career .desc{font-size:14px;color:var(--ink);line-height:1.4;}
 
   /* ===== SNS ===== */
-  .sns{padding:30px 26px 8px;}
+  .sns{padding:30px 26px calc(var(--cta-h) + env(safe-area-inset-bottom));}
   .sns a{
     display:flex;align-items:center;justify-content:space-between;text-decoration:none;
     background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-bottom:10px;
@@ -204,24 +206,26 @@
           <span class="pill__dot"></span>
           <span class="pill__txt">사회 · 역사</span>
         </span>
-        <h1 class="name">구윤진</h1>
-        <div class="name-en">GU YUN JIN</div>
-        <p class="tagline">핵심을 파고드는 강의, 한 표로 응원해 주세요</p>
+        <div class="namestack">
+          <h1 class="name">구윤진</h1>
+          <div class="name-en">GU YUN JIN</div>
+        </div>
+        <p class="tagline">제가 0이고 학생이 100인,<br> 진짜 0타 강사가 되겠습니다.</p>
       </div>
     </header>
 
     <!-- ===== VOTE BAND ===== -->
     <section class="voteband">
-      <a class="vote-link btn-vote" href="#">구윤진 쌤에게 투표하기 →</a>
-      <div class="vote-note">엠베스트 회원이면 하루 최대 3표 · 30초면 끝나요</div>
+      <a class="vote-link btn-vote" href="#">0타 강사 구윤진에게 투표하기 →</a>
+      <div class="vote-note">엠베스트 회원가입 후 3초면 충분합니다 🙏 </div>
     </section>
 
     <!-- ===== CONTEST INFO ===== -->
-    <section class="info">
+    <!-- <section class="info">
       <div><b>6.30<i>–</i>7.14</b><span>투표 기간</span></div>
       <div><b>1일 3표</b><span>회원 기준</span></div>
       <div><b>제2회</b><span>엠베스트 대회</span></div>
-    </section>
+    </section> -->
 
     <!-- ===== VIDEO ===== -->
     <section class="video-sec">
@@ -236,7 +240,7 @@
             <div class="video-frame__shade"></div>
             <div class="play"></div>
           </div>
-          <div class="video-meta"><span class="ep">EP.01</span><span>소개 영상</span></div>
+          <div class="video-meta"><span class="ep">EP.01</span><span>윤진쌤 소개 영상 ❣️</span></div>
         </div>
         <div>
           <div class="video-frame" data-yt="vNDMPPEaBzU" data-start="1" data-title="강의 영상 EP.02">
@@ -244,17 +248,19 @@
             <div class="video-frame__shade"></div>
             <div class="play"></div>
           </div>
-          <div class="video-meta"><span class="ep">EP.02</span><span>강의 영상</span></div>
+          <div class="video-meta"><span class="ep">EP.02</span><span>강의, 자신있습니다 👩‍🏫</span></div>
         </div>
       </div>
     </section>
 
     <!-- ===== CAREER ===== -->
     <section class="career">
-      <h3>경력 &amp; 성과</h3>
-      <div class="row"><span class="yr">2019</span><span class="desc">엠베스트 강사 — 소개 입력 예정</span></div>
-      <div class="row"><span class="yr">2023</span><span class="desc">주요 강의 / 수상 — 내용 입력 예정</span></div>
-      <div class="row"><span class="yr">now</span><span class="desc">대표 커리큘럼 — 내용 입력 예정</span></div>
+      <h3>경력 사항</h3>
+      <div class="row"><span class="yr">&nbsp; 現</span><span class="desc"> 다원교육 (대치) </span></div>
+      <div class="row"><span class="yr">&nbsp; 現</span><span class="desc"> 날개를 달다 (한성과학고)</span></div>
+      <div class="row"><span class="yr">&nbsp; 現</span><span class="desc">족보닷컴 해설 검수 위원 (사회/역사)</span></div>
+      <div class="row"><span class="yr">&nbsp; 前</span><span class="desc">부산외국어고등학교 교과 및 입시 담임</span></div>
+      <div class="row"><span class="yr">&nbsp; 前</span><span class="desc">2022 개정 교육과정 선도 교원 (교육부)</span></div>
     </section>
 
     <!-- ===== SNS ===== -->
@@ -262,20 +268,21 @@
       <h3>더 만나보기</h3>
       <!-- href 를 실제 링크로 교체하세요 -->
       <a href="https://www.instagram.com/9__zzang9?igsh=MTd5bHRwejVnbHJ6dA=="><span>Instagram</span><span>@9__zzang9 &nbsp;→</span></a>
-      <a href="https://www.youtube.com/@9zzang9"><span>YouTube</span><span>구윤진 Live →</span></a>
-      <a href="https://www.mbest.co.kr/"><span>엠베스트 강의실</span><span>바로가기 →</span></a>
+      <!-- <a href="https://www.youtube.com/@9zzang9"><span>YouTube</span><span>구윤진 Live →</span></a> -->
+      <!-- <a href="https://www.mbest.co.kr/"><span>엠베스트 강의실</span><span>바로가기 →</span></a> -->
     </section>
 
     <!-- ===== 하단 고정 CTA ===== -->
     <div class="sticky-cta">
-      <a class="vote-link btn-vote" href="#">투표하러 가기 →</a>
+      <a class="vote-link btn-vote" href="#">한 표 부탁드립니다 ❣️ </a>
     </div>
 
   </main>
+ 
 
 <script>
   // ===== 실제 투표 페이지 URL 로 교체하세요 =====
-  var VOTE_URL = "https://www.mbest.co.kr/pub_event/event/00000845/";
+  var VOTE_URL = "https://link.naver.com/bridge?url=https%3A%2F%2Fwww.mbest.co.kr%2Fpub_event%2Fevent%2F00000845%2FDefault.asp&dst=naversearchapp%3A%2F%2Finappbrowser%3Furl%3Dhttps%253A%252F%252Fwww.mbest.co.kr%252Fpub_event%252Fevent%252F00000845%252FDefault.asp%26version%3D10%26sourceReferer%3Dshare";
 
   document.querySelectorAll(".vote-link").forEach(function (a) {
     a.href = VOTE_URL;
