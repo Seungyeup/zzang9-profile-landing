@@ -26,7 +26,7 @@
     --mint:#00BEB4; --mint-bright:#00D6C8; --mint-deep:#00A89F; --mint-soft:#7CEFE6;
     --screen:#F4F8FB; --line:#E1E9F2; --muted:#7A8AA3;
     --col:480px;            /* 데스크톱 중앙 컬럼 최대 폭 */
-    --cta-h:104px;          /* 하단 고정 CTA 영역 높이(콘텐츠 여백 확보용) */
+    --cta-h:112px;          /* 하단 고정 CTA 영역 높이(콘텐츠 여백 확보용) */
   }
 
   *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
@@ -159,14 +159,14 @@
   .video-meta span:last-child{font-size:14px;color:var(--navy);font-weight:600;line-height:1.4;}
 
   /* ===== CAREER ===== */
-  .career{padding:30px 26px 8px;}
+  .career{padding:30px 26px calc(var(--cta-h) + env(safe-area-inset-bottom));}
   .career .row{display:flex;gap:14px;padding:9px 0;border-top:1px solid var(--line);}
   .career .row:last-child{border-bottom:1px solid var(--line);}
   .career .yr{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--mint-deep);font-size:14px;min-width:46px;}
   .career .desc{font-size:14px;color:var(--ink);line-height:1.4;}
 
   /* ===== SNS ===== */
-  .sns{padding:30px 26px calc(var(--cta-h) + env(safe-area-inset-bottom));}
+  .sns{padding:30px 26px 8px;}
   .sns a{
     display:flex;align-items:center;justify-content:space-between;text-decoration:none;
     background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-bottom:10px;
@@ -220,6 +220,15 @@
       <div class="vote-note">엠베스트 회원가입 후 3초면 충분합니다 🙏 </div>
     </section>
 
+    <!-- ===== SNS ===== -->
+    <section class="sns">
+      <!-- href 를 실제 링크로 교체하세요 -->
+      <a href="https://www.instagram.com/9__zzang9?igsh=MTd5bHRwejVnbHJ6dA=="><span>Instagram</span><span>@9__zzang9 &nbsp;→</span></a>
+      <a href="https://m.blog.naver.com/rndbs312/224338754854"><span>Blog</span><span>나야, 재도전 🦋 &nbsp;→</span></a>
+      <!-- <a href="https://www.youtube.com/@9zzang9"><span>YouTube</span><span>구윤진 Live →</span></a> -->
+      <!-- <a href="https://www.mbest.co.kr/"><span>엠베스트 강의실</span><span>바로가기 →</span></a> -->
+    </section>
+
     <!-- ===== CONTEST INFO ===== -->
     <!-- <section class="info">
       <div><b>6.30<i>–</i>7.14</b><span>투표 기간</span></div>
@@ -254,23 +263,13 @@
     </section>
 
     <!-- ===== CAREER ===== -->
-    <section class="career">
+    <section class="career pad-bottom">
       <h3>경력 사항</h3>
       <div class="row"><span class="yr">&nbsp; 現</span><span class="desc"> 다원교육 (대치) </span></div>
       <div class="row"><span class="yr">&nbsp; 現</span><span class="desc"> 날개를 달다 (한성과학고)</span></div>
       <div class="row"><span class="yr">&nbsp; 現</span><span class="desc">족보닷컴 해설 검수 위원 (사회/역사)</span></div>
       <div class="row"><span class="yr">&nbsp; 前</span><span class="desc">부산외국어고등학교 교과 및 입시 담임</span></div>
       <div class="row"><span class="yr">&nbsp; 前</span><span class="desc">2022 개정 교육과정 선도 교원 (교육부)</span></div>
-    </section>
-
-    <!-- ===== SNS ===== -->
-    <section class="sns pad-bottom">
-      <h3>더 만나보기</h3>
-      <!-- href 를 실제 링크로 교체하세요 -->
-      <a href="https://www.instagram.com/9__zzang9?igsh=MTd5bHRwejVnbHJ6dA=="><span>Instagram</span><span>@9__zzang9 &nbsp;→</span></a>
-      <a href="https://m.blog.naver.com/rndbs312/224338754854"><span>Blog</span><span>나야, 재도전 🦋 &nbsp;→</span></a>
-      <!-- <a href="https://www.youtube.com/@9zzang9"><span>YouTube</span><span>구윤진 Live →</span></a> -->
-      <!-- <a href="https://www.mbest.co.kr/"><span>엠베스트 강의실</span><span>바로가기 →</span></a> -->
     </section>
 
     <!-- ===== 하단 고정 CTA ===== -->
